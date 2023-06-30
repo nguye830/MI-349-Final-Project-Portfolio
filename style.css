@@ -11,3 +11,695 @@ body{
     overflow: hidden;
  }
  
+ #directtoprojects {
+   height: auto;
+   max-width: 100%;
+}
+
+
+#navigationbar
+
+
+header::after {
+   content: '';
+   display: table;
+   clear: both;
+}
+
+
+nav ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   word-spacing: 5px;
+   letter-spacing: 0px;
+}
+
+
+nav li {
+   display: inline-block;
+   position: relative;
+}
+
+
+nav a {
+   text-decoration: none;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 300;
+   font-size: 8px;
+   color: black;
+  
+}
+
+
+nav a:hover {
+   opacity: 75%;
+}
+
+
+.projects, .about, .linkedin{
+   word-spacing: 0;
+}
+
+
+
+
+/* top */
+
+
+.leftside {
+   margin-bottom: -30px;
+}
+
+
+h1 {
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 500;
+}
+
+
+.me {
+   padding-left: 20px;
+}
+
+
+.hello {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: auto auto;
+   align-items: flex-end;
+}
+
+
+.hello > div {
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+
+.me h1 {
+   display: flex;
+   align-items: flex-end;
+   margin-bottom: 5px;
+   font-size: 17px;
+   line-height: 12px;
+}
+
+
+.hello > div:nth-of-type(2) {
+   grid-column: 2;
+   grid-row: 1 / 3;
+   display: flex;
+}
+
+
+.logoimg {
+   max-width: 20%;
+   height: auto;
+   padding-left: 20px;
+}
+
+
+/* projects */
+
+
+.index_spartarail, .index_prototype {
+   display: grid;
+   grid-template-columns: 3fr 2fr;
+   grid-template-rows: auto;
+   padding: 25px 10px 25px 10px;
+   column-gap: 20px;
+   color: #ffffff;
+}
+
+
+
+.index_spartarail img, .index_prototype img {
+   max-width: 100%;
+   height: auto;
+   border-radius: 20px;
+   border: rgb(255, 255, 255) solid 2px;
+   transition: transform 0.1s;
+}
+
+
+a:link{
+   text-decoration: none;
+   color: #bcbcbc;
+}
+
+
+a:visited {
+   text-decoration: none;
+   color: #7c7c7c;
+}
+
+
+a:hover{
+   text-decoration: none;
+   opacity: 0.75;
+   transform: scale(1.010);
+}
+
+
+a:active{
+   text-decoration: none;
+   opacity: 0.75;
+}
+
+
+.bottom-left {
+   padding-top: 10px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 350;
+   font-size: 11px;
+}
+
+
+h2 {
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 600;
+   margin: 0;
+   margin-top: 2px;
+   margin-bottom:7px;
+   text-decoration: none;
+   line-height: 20px;
+}
+
+
+h3 {
+   margin-top: 13px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 500;
+   color: rgb(77, 128, 237);
+   letter-spacing: 0.5px;
+}
+
+
+/* footer */
+
+
+footer {
+   border: #717171 solid 1px;
+   position:relative;
+   bottom: 0;
+   padding: 20px 0px 20px 0px;
+   background-color: #363734;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 350;
+}
+
+
+footer h1 {
+   margin: 0;
+   padding: 0px 50px 0px 50px;
+   color: #ffe893;
+   font-size: 15px;
+   font-weight: 500;
+   font-style: italic;
+}
+
+
+footer p {
+   font-family: Arial, Helvetica, sans-serif;
+
+
+   font-size: 12px;
+   line-height: 5px;
+   color: #fff9f5;
+}
+
+
+
+.letsconnect {
+   line-height: 20px;
+}
+
+
+.footer_grid {
+   display: grid;
+   grid-column: span 2;
+   grid-row: span 4;
+   grid-template-columns: auto auto;
+   grid-template-rows: auto;
+   padding: 0px 50px 0px 50px;
+   color: rgb(252, 245, 238);
+}
+
+.leftfooter a:link{
+   text-decoration: none;
+   color: rgb(252, 245, 238);
+}
+
+
+.leftfooter a:visited {
+   text-decoration: none;
+   color: rgb(252, 245, 238);
+}
+
+
+.leftfooter a:hover{
+   text-decoration: none;
+   opacity: 0.75;
+}
+
+
+.leftfooter a:active{
+   text-decoration: none;
+   opacity: 0.75;
+}
+
+
+
+@media screen and (min-width: 800px) {
+   /* navigation bar */
+
+
+   header::after {
+       content: '';
+       display: table;
+       clear: both;
+   }
+
+
+   nav ul {
+       margin: 0;
+       padding: 0;
+       list-style: none;
+       word-spacing: 10px;
+       letter-spacing: 1px;
+   }
+
+
+   nav li {
+       display: inline-block;
+       position: relative;
+   }
+
+
+   nav a {
+       text-decoration: none;
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: 300;
+       font-size: 12px;
+       line-height: 20px;
+       color: black;
+      
+   }
+
+
+   nav a:hover {
+       color: #363734;
+   }
+
+
+   .projects, .about, .linkedin{
+       word-spacing: 0;
+   }
+
+
+
+   /* top */
+
+
+   .hello {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-template-rows: auto auto;
+       align-items: flex-end;
+   }
+
+
+   .hello > div {
+       background-size: cover;
+       background-attachment: fixed;
+   }
+
+
+   .me h1 {
+       display: flex;
+       align-items: flex-end;
+       line-height: 50px;
+       font-size: 55px;
+       margin: 0;
+       margin-bottom: 10px;
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: 500;
+   }
+
+
+   .hello > div:nth-of-type(2) {
+       grid-column: 2;
+       grid-row: 1 / 3;
+   }
+
+
+   .logoimg {
+       max-width: 15%;
+       height: auto;
+   }
+      
+   }
+
+
+   /* short intro */
+   .intro {
+       padding: 33px 33px 35px 35px;
+       background-color: #9ba3e3;
+       font-family: Arial, Helvetica, sans-serif;
+   }
+
+   .intro h2 {
+       font-weight: 300;
+       font-size: 25px;
+       line-height: 25px;
+       margin: 0;
+   }
+
+   .intro p {
+       font-size: 12px;
+       color:#6b1f4d
+   }
+
+
+   /* projects */
+
+
+.index_spartarail, .index_prototype {
+       display: grid;
+       grid-template-columns: 3fr 2fr;
+       grid-template-rows: auto;
+       padding: 40px 40px 40px 40px;
+       column-gap: 20px;
+       color: #ffffff;
+   }
+
+
+   .index_spartarail {
+       background: #8fd2a1;
+   }
+
+
+   .index_prototype {
+       background: #a2f3ff;
+   }
+
+
+.index_spartarail img, .index_prototype img {
+       max-width: 100%;
+       height: auto;
+       border-radius: 20px;
+       border: rgb(255, 255, 255) solid 2px;
+       transition: transform 0.1s;
+   }
+
+
+
+   .bottom-left {
+       padding-top: 30px;
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: 350;
+       font-size: 15px;
+   }
+
+
+   h2 {
+       font-size: 30px;
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: 600;
+       margin: 0;
+       margin-top: 10px;
+       margin-bottom: 10px;
+       text-decoration: none;
+       line-height: 30px;
+   }
+
+
+   h3 {
+       margin-top: 10px;
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: 500;
+       color: rgb(65, 124, 250);
+       letter-spacing: 0.5px;
+       font-size: 10px;
+   }
+
+
+   /* footer */
+
+
+   footer {
+       position: relative;
+       bottom: 0;
+       margin: 0;
+       padding: 20px 0px 20px 0px;
+       background-color: #363734;
+       font-family: Arial, Helvetica, sans-serif;
+   }
+
+
+   footer h1 {
+       margin: 0;
+       color: #dce1bd;
+       font-size: 40px;
+       font-weight: 500;
+       font-style: italic;
+       line-height: 35px;
+   }
+
+
+   footer p {
+       font-size: 12px;
+       line-height: 5px;
+   }
+
+
+
+   .letsconnect {
+       line-height: 15px;
+   }
+
+
+
+
+@media screen and (min-width: 1250px) {
+  /* navigation bar */
+
+
+   header::after {
+       content: '';
+       display: table;
+       clear: both;
+   }
+
+
+   nav ul {
+       margin: 0;
+       padding: 0;
+       list-style: none;
+       word-spacing: 50px;
+       letter-spacing: 1px;
+   }
+
+
+   nav li {
+       display: inline-block;
+       position: relative;
+   }
+
+
+   nav a {
+       text-decoration: none;
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: 300;
+       font-size: 15px;
+       color: black;
+      
+   }
+
+
+   nav a:hover {
+       color: #363734;
+   }
+
+
+   .projects, .about, .linkedin{
+       word-spacing: 0;
+   }
+
+   /* top */
+
+
+   .me {
+       padding-left: 200px;
+   }
+
+
+   .hello {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-template-rows: auto auto;
+       align-items: flex-end;
+   }
+
+
+   .hello > div {
+       background-size: cover;
+       background-attachment: fixed;
+   }
+
+
+   .me h1 {
+       display: flex;
+       align-items: flex-end;
+       margin-bottom: 27px;
+       line-height: 70px;
+       font-size: 75px;
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: 500;
+   }
+
+
+   .hello > div:nth-of-type(2) {
+       grid-column: 2;
+       grid-row: 1 / 3;
+   }
+
+
+   .logoimg {
+       max-width: 15%;
+       padding-left: 200px;
+   }
+     
+   }
+
+
+   /* projects */
+
+
+   .index_spartarail, .index_prototype {
+       display: grid;
+       grid-template-columns: 3fr 2fr;
+       grid-template-rows: auto;
+       padding: 50px 200px 50px 200px;
+       column-gap: 50px;
+       color: #ffffff;
+   }
+
+
+   .index_spartarail img, .index_prototype img {
+       max-width: 100%;
+       height: auto;
+       border-radius: 20px;
+       border: rgb(255, 255, 255) solid 2px;
+       transition: transform 0.1s;
+   }
+
+
+   a:link{
+       text-decoration: none;
+       color: #363734;
+   }
+
+
+   a:visited {
+       text-decoration: none;
+       color: #363734;
+   }
+
+
+   a:hover{
+       text-decoration: none;
+       opacity: 0.75;
+       transform: scale(1.010);
+   }
+
+
+   a:active{
+       text-decoration: none;
+       opacity: 0.75;
+   }
+
+
+   .bottom-left {
+       padding-top: 50px;
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: 350;
+       font-size: 18px;
+   }
+
+
+   h2 {
+       font-size: 45px;
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: 600;
+       margin: 0;
+       margin-top: 10px;
+       margin-bottom: 30px;
+       text-decoration: none;
+       line-height: 48px;
+   }
+
+
+   h3 {
+       margin-top: 30px;
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: 500;
+       color: rgb(65, 124, 250);
+       letter-spacing: 0.5px;
+       font-size: 18px;
+   }
+
+
+   /* footer */
+
+
+   footer {
+       border: #363734 solid 1px;
+       position:relative;
+       bottom: 0;
+       padding: 50px 0px 20px 0px;
+       background-color: #363734;
+       font-family: Arial, Helvetica, sans-serif;
+   }
+
+
+   footer h1 {
+       margin: 0;
+       padding: 0px 95px 0px 95px;
+       color: #ffe893;
+       font-size: 30px;
+       font-weight: 500;
+       font-style: italic;
+       margin-bottom: 20px;
+   }
+
+
+   footer p {
+       font-size: 12px;
+       line-height: 5px;
+   }
+
+
+
+   .letsconnect {
+       line-height: 25px;
+   }
+
+
+   .footer_grid {
+       display: grid;
+       grid-column: span 1;
+       grid-row: span 2;
+       grid-template-columns: auto auto;
+       grid-template-rows: auto;
+       padding: 0px 100px 0px 100px;
+       color: rgb(252, 245, 238);
+   }
+
+
+
+
+
+
